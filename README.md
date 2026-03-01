@@ -23,6 +23,7 @@ I use this system to write 3 LinkedIn posts per week for my engineering leadersh
 
 | File | What It Does |
 |---|---|
+| `SETUP_GUIDE.md` | **Start here.** Step-by-step guide to build your own LinkedIn writing skill from scratch. Written for beginners. |
 | `LinkedIn PROJECT_INSTRUCTIONS to paste.md` | Project instructions to paste into your Claude Project's system prompt. Defines triggers, formatting rules, and behavior. |
 | `LinkedIn MEMORY_SEEDS to paste.md` | Suggested memory entries for tracking story numbers, high-performing formats, seasonal context, and voice corrections. |
 
@@ -39,13 +40,61 @@ I use this system to write 3 LinkedIn posts per week for my engineering leadersh
 The files are plain markdown. You can paste them into any LLM's system prompt or context window. Start with `LinkedIn_SKILL.md` and `anti-ai-writing-guide.md` as the minimum setup.
 
 ### Adapting to Your Voice
-These files are calibrated to my voice (direct, confrontational, coaching-oriented). To make them yours:
 
-1. **Replace the voice profile** in `LinkedIn_SKILL.md` with your own phrases, tone, and style
-2. **Replace the examples** in `LinkedIn_POST_EXAMPLES.md` with your actual best-performing posts
-3. **Keep the anti-AI guide as-is.** The banned words, structure rules, and detection checklist are universal
-4. **Adjust the content pillars** to match your expertise areas
-5. **Update the proof points** with your own numbers and credentials
+> **⚠️ Important:** These files are calibrated to MY voice (direct, confrontational, coaching-oriented). If you use them as-is, your posts will sound like me, not you. You MUST customize the voice profile before publishing anything.
+
+The `anti-ai-writing-guide.md` is universal. Keep it. The banned words, structure rules, and detection checklist work for everyone.
+
+Everything else needs to become yours. Here's how:
+
+**Quick start: Use this prompt to build your own voice profile**
+
+Paste this into Claude (or any LLM) along with 5-10 of your best LinkedIn posts:
+
+```
+I'm building an AI writing skill for LinkedIn. Below are my real posts that performed well.
+
+Analyze them and create a voice profile for me. Include:
+
+1. Tone description (how do I sound? formal/casual, serious/humorous, etc.)
+2. Sentence patterns (short fragments? long narrative? mixed?)
+3. Words and phrases I use often
+4. Words and phrases I NEVER use (that would sound wrong coming from me)
+5. How I open posts (what patterns do I repeat?)
+6. How I close posts
+7. Formatting habits (bullets, emojis, white space, line length)
+8. My typical post structure
+9. Topics and themes I care about (these become my content pillars)
+10. What makes my voice different from generic LinkedIn advice
+
+Be specific. Don't say "casual tone." Say exactly what makes it casual.
+
+[PASTE YOUR 5-10 BEST POSTS HERE]
+```
+
+Take the output and use it to replace the voice profile section in `LinkedIn_SKILL.md`.
+
+**Then customize these sections:**
+
+1. **Voice Profile** in `LinkedIn_SKILL.md` → replace with your own tone, phrases, and banned words
+2. **Post Examples** in `LinkedIn_POST_EXAMPLES.md` → replace with your actual best-performing posts
+3. **Content Pillars** → swap my 3 pillars for your expertise areas
+4. **Proof Points** → replace my numbers and credentials with yours
+5. **Project Instructions** → adjust triggers and behavior to match your workflow
+
+**After your first 5 posts, refine further.** Tell Claude:
+
+```
+Here are 5 posts you wrote for me. I'm marking what felt right and what felt off.
+
+[Paste posts with your notes like: "this sentence sounds like me", "I would never say this", "too formal here", "good energy in this paragraph"]
+
+Update my voice profile based on this feedback.
+```
+
+Repeat every few weeks. The skill gets sharper over time.
+
+For the full step-by-step walkthrough, see `SETUP_GUIDE.md`.
 
 ## What Makes This Different
 
